@@ -1,0 +1,215 @@
+@charset "UTF-8";
+/* Mixin pour gérer les angles arrondis*/
+/* Mixin avec un choix de couleur, hauteur et longueur au moment de l'include */
+/* Mixin test*/
+#container2 {
+  margin-top: -20px;
+  background-color: white;
+  background-image: url("../SRC_site/partie 2/cheminv2.png"), url("../SRC_site/partie 2/enfantv2.png");
+  background-position: top 20% left 58.8%, top 20% left 80%;
+  background-repeat: no-repeat;
+  background-size: 27.5%, 9%;
+}
+
+#container3 {
+  background-color: #3c9135;
+  background-image: url("../SRC_site/partie 3/cheminv2.png"), url("../SRC_site/partie 3/rivierev2.png"), url("../SRC_site/partie 3/solv2.png"), url("../SRC_site/partie 3/sol2v2.png");
+  background-position: top 0% left 30.35%,top 215% left 25%,top 100% left 0%,top -0.5% left 100.5%;
+  background-repeat: no-repeat;
+  background-size: 56.1%, 100%, 50%, 60%;
+}
+
+#container4 {
+  margin-left: -20px;
+  background-color: white;
+  background-image: url("../SRC_site/partie 4/cheminv2.png");
+  background-position: top 0% left -12.5%;
+  background-repeat: no-repeat;
+  background-size: 31.5%;
+}
+
+.containerContent {
+  background-color: white;
+}
+
+.containerDraw {
+  background-color: #3c9135;
+}
+
+#container2 {
+  margin-top: -20px;
+  background-image: url("../SRC_site/partie 2/cheminv2.png"), url("../SRC_site/partie 2/enfantv2.png");
+  background-position: top 20% left 58.8%, top 20% left 80%;
+  background-repeat: no-repeat;
+  background-size: 27.5%, 9%;
+}
+
+#container3 {
+  background-image: url("../SRC_site/partie 3/cheminv2.png"), url("../SRC_site/partie 3/rivierev2.png"), url("../SRC_site/partie 3/solv2.png"), url("../SRC_site/partie 3/sol2v2.png");
+  background-position: top 0% left 30.35%, top 215% left 25%, top 100% left 0%, top -0.5% left 100.5%;
+  background-repeat: no-repeat;
+  background-size: 56.1%, 100%, 50%, 60%;
+}
+
+#container4 {
+  margin-left: -20px;
+  background-image: url("../SRC_site/partie 4/cheminv2.png");
+  background-position: top 0% left -12.5%;
+  background-repeat: no-repeat;
+  background-size: 31.5%;
+}
+
+#lien3 {
+  border: 2px solid #ce6d25;
+  color: #ce6d25;
+  width: 30%;
+  height: 50px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 36%;
+  margin-bottom: 2%;
+}
+
+#lien3:hover {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background-color: #ce6d25;
+  color: white;
+}
+
+#lien4 {
+  border: 2px solid #c9b903;
+  color: #c9b903;
+  width: 30%;
+  height: 50px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 36%;
+  margin-bottom: 2%;
+}
+
+#lien4:hover {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background-color: #c9b903;
+  color: white;
+}
+
+.lien, #lien3, #lien4 {
+  width: 30%;
+  height: 50px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 36%;
+  margin-bottom: 2%;
+}
+
+.lien:hover, #lien3:hover, #lien4:hover {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  color: white;
+}
+
+.lien #lien3, #lien3 #lien3, #lien4 #lien3 {
+  border: 2px solid #ce6d25;
+  color: #ce6d25;
+}
+
+.lien #lien3:hover, #lien3 #lien3:hover, #lien4 #lien3:hover {
+  background-color: #ce6d25;
+}
+
+.lien #lien4, #lien3 #lien4, #lien4 #lien4 {
+  border: 2px solid #c9b903;
+  color: #c9b903;
+}
+
+.lien #lien4:hover, #lien3 #lien4:hover, #lien4 #lien4:hover {
+  background-color: #c9b903;
+}
+
+.lien, #lien3, #lien4 {
+  width: 30%;
+  height: 50px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 36%;
+  margin-bottom: 2%;
+}
+
+.lien:hover, #lien3:hover, #lien4:hover {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  color: white;
+}
+
+#lien3 #lien3, #lien4 #lien3 {
+  border: 2px solid #ce6d25;
+  color: #ce6d25;
+}
+
+#lien3 #lien3:hover, #lien4 #lien3:hover {
+  background-color: #ce6d25;
+}
+
+#lien3 #lien4, #lien4 #lien4 {
+  border: 2px solid #c9b903;
+  color: #c9b903;
+}
+
+#lien3 #lien4:hover, #lien4 #lien4:hover {
+  background-color: #c9b903;
+}
+/*# sourceMappingURL=test.css.map */

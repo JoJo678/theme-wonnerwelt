@@ -1,0 +1,1160 @@
+@charset "UTF-8";
+/*Reset css----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* $linkC4: url('../SRC_site/partie 4/cheminv2.png');
+$posC4: top 0% left -12.5%;
+$sizeC4: 31.5%;  */
+/* $linkC6: url('../SRC_site/partie 6/cheminv2.png');
+$posC6: top 0% left 104%;
+$sizeC6: 29%; */
+/* $linkC8: url('../SRC_site/partie 8/chemin.png');
+$posC8: top 0% left 90.2%;
+$sizeC8: 26.5%; */
+/* $linkC14: url('../SRC_site/partie 14/enfant.png');
+$posC14: top 40% left 10%;
+$sizeC14: 12%; */
+/* $linkC16: url('../SRC_site/partie 16/chemin.png');
+$posC16: top 50% left 81.3%;
+$sizeC16: 27%; */
+/* $linkC18: url('../SRC_site/partie 8/chemin.png');
+$posC18: top 0% left 90.2%;
+$sizeC18: 26.5%; */
+/* Mixin pour gérer les angles arrondis*/
+/* Mixin avec un choix de couleur, hauteur et longueur au moment de l'include */
+/* Mixin test*/
+/* @mixin backgroundContainerDessin($width,$height,$link,$size,$pos){
+    z-index:2;
+    width: $width;
+    height: $height;
+    background-image: $link;
+    background-repeat: no-repeat;
+    background-size: $size;
+    position:absolute;
+    margin: $pos;
+   
+} */
+/* #cheminMain{
+    z-index: 1;//OU 1 pour chemin
+    position:relative;
+    background-color:transparent;
+    background-image:  url('../SRC_site/backgroundv3.png');
+    background-position: top 77.9% left 46.4%;
+    background-repeat: no-repeat;
+    float:left;
+    width:100%;
+    height:10177px;
+}  */
+/* Style pour le menu responsive principal*/
+#responsiveMenu {
+  width: 12.9%;
+  height: 500px;
+  margin-left: 87.1%;
+}
+
+/* Fin Style pour le menu responsive principal*/
+.userLog {
+  padding: 10px;
+}
+
+#menuFixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9;
+}
+
+@media only screen and (max-width: 600px) {
+  #menuFixed {
+    width: 70%;
+    margin-left: 5%;
+  }
+}
+
+#menuFixed .mega-menu-wrap .mega-menu-toggle {
+  margin-top: 20px;
+  margin-right: 15px;
+  z-index: 99;
+}
+
+#menuFixed .mega-menu-wrap .mega-menu-toggle .mega-toggle-blocks-right #mega-toggle-block-1 {
+  background-color: white;
+  padding-right: 9%;
+}
+
+/* Menu de navigation à faire en responsive */
+#panelUser, #containerMain .containerTexte#container14 #content #content-blank #test #wpmem_msg, #containerMain .containerTexte#container14 #content #content-blank #test #wpmem_reg, #containerMain .containerTexte#container14 #content #content-blank #test .wpmem_msg {
+  background-color: #8dae40;
+  position: fixed;
+  width: 20%;
+  margin: 5% auto;
+  margin-top: 10.8%;
+  left: 0;
+  right: 0;
+  height: auto;
+  z-index: 5;
+}
+
+#panelUser #btnForm, #containerMain .containerTexte#container14 #content #content-blank #test #wpmem_msg #btnForm, #containerMain .containerTexte#container14 #content #content-blank #test #wpmem_reg #btnForm, #containerMain .containerTexte#container14 #content #content-blank #test .wpmem_msg #btnForm {
+  border: 1px solid white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2em;
+}
+
+@media only screen and (min-width: 1281px) and (max-width: 1540px) {
+  #panelUser, #containerMain .containerTexte#container14 #content #content-blank #test #wpmem_msg, #containerMain .containerTexte#container14 #content #content-blank #test #wpmem_reg, #containerMain .containerTexte#container14 #content #content-blank #test .wpmem_msg {
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1280px) {
+  #panelUser, #containerMain .containerTexte#container14 #content #content-blank #test #wpmem_msg, #containerMain .containerTexte#container14 #content #content-blank #test #wpmem_reg, #containerMain .containerTexte#container14 #content #content-blank #test .wpmem_msg {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 735px) {
+  #panelUser, #containerMain .containerTexte#container14 #content #content-blank #test #wpmem_msg, #containerMain .containerTexte#container14 #content #content-blank #test #wpmem_reg, #containerMain .containerTexte#container14 #content #content-blank #test .wpmem_msg {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #panelUser, #containerMain .containerTexte#container14 #content #content-blank #test #wpmem_msg, #containerMain .containerTexte#container14 #content #content-blank #test #wpmem_reg, #containerMain .containerTexte#container14 #content #content-blank #test .wpmem_msg {
+    width: 90%;
+    text-align: center;
+  }
+}
+
+#containerMain {
+  margin-bottom: -1%;
+  display: -webkit-box;
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  -webkit-box-align: normal;
+          align-items: normal;
+  -webkit-align-items: normal;
+  -ms-flex-align: normal;
+  -webkit-box-pack: normal;
+          justify-content: normal;
+  -webkit-justify-content: normal;
+  -ms-flex-pack: normal;
+}
+
+#containerMain .containerTexte {
+  width: 100%;
+}
+
+#containerMain .containerTexte#container2, #containerMain .containerTexte#container4, #containerMain .containerTexte#container6, #containerMain .containerTexte#container8, #containerMain .containerTexte#container10, #containerMain .containerTexte#container12, #containerMain .containerTexte#container14, #containerMain .containerTexte#container16, #containerMain .containerTexte#container18 {
+  background-color: white;
+  display: -webkit-box;
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  -webkit-box-align: normal;
+          align-items: normal;
+  -webkit-align-items: normal;
+  -ms-flex-align: normal;
+  -webkit-box-pack: normal;
+          justify-content: normal;
+  -webkit-justify-content: normal;
+  -ms-flex-pack: normal;
+  height: auto;
+  min-height: 540px;
+}
+
+#containerMain .containerTexte#container2 #content, #containerMain .containerTexte#container4 #content, #containerMain .containerTexte#container6 #content, #containerMain .containerTexte#container8 #content, #containerMain .containerTexte#container10 #content, #containerMain .containerTexte#container12 #content, #containerMain .containerTexte#container14 #content, #containerMain .containerTexte#container16 #content, #containerMain .containerTexte#container18 #content {
+  width: 50%;
+}
+
+@media only screen and (min-width: 1281px) and (max-width: 1540px) {
+  #containerMain .containerTexte#container2 #content, #containerMain .containerTexte#container4 #content, #containerMain .containerTexte#container6 #content, #containerMain .containerTexte#container8 #content, #containerMain .containerTexte#container10 #content, #containerMain .containerTexte#container12 #content, #containerMain .containerTexte#container14 #content, #containerMain .containerTexte#container16 #content, #containerMain .containerTexte#container18 #content {
+    /*  margin-left:20%; */
+    width: 65%;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1280px) {
+  #containerMain .containerTexte#container2 #content, #containerMain .containerTexte#container4 #content, #containerMain .containerTexte#container6 #content, #containerMain .containerTexte#container8 #content, #containerMain .containerTexte#container10 #content, #containerMain .containerTexte#container12 #content, #containerMain .containerTexte#container14 #content, #containerMain .containerTexte#container16 #content, #containerMain .containerTexte#container18 #content {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #containerMain .containerTexte#container2 #content, #containerMain .containerTexte#container4 #content, #containerMain .containerTexte#container6 #content, #containerMain .containerTexte#container8 #content, #containerMain .containerTexte#container10 #content, #containerMain .containerTexte#container12 #content, #containerMain .containerTexte#container14 #content, #containerMain .containerTexte#container16 #content, #containerMain .containerTexte#container18 #content {
+    width: 98%;
+  }
+}
+
+#containerMain .containerTexte#container2 #content .titreMenu, #containerMain .containerTexte#container4 #content .titreMenu, #containerMain .containerTexte#container6 #content .titreMenu, #containerMain .containerTexte#container8 #content .titreMenu, #containerMain .containerTexte#container10 #content .titreMenu, #containerMain .containerTexte#container12 #content .titreMenu, #containerMain .containerTexte#container14 #content .titreMenu, #containerMain .containerTexte#container16 #content .titreMenu, #containerMain .containerTexte#container18 #content .titreMenu {
+  text-decoration: underline;
+  margin-left: 36%;
+  margin-bottom: 2%;
+  font-size: 1.2em;
+}
+
+#containerMain .containerTexte#container2 #content #content-blank, #containerMain .containerTexte#container4 #content #content-blank, #containerMain .containerTexte#container6 #content #content-blank, #containerMain .containerTexte#container8 #content #content-blank, #containerMain .containerTexte#container10 #content #content-blank, #containerMain .containerTexte#container12 #content #content-blank, #containerMain .containerTexte#container14 #content #content-blank, #containerMain .containerTexte#container16 #content #content-blank, #containerMain .containerTexte#container18 #content #content-blank {
+  margin-left: 1%;
+}
+
+#containerMain .containerTexte#container2 #content #content-blank p, #containerMain .containerTexte#container4 #content #content-blank p, #containerMain .containerTexte#container6 #content #content-blank p, #containerMain .containerTexte#container8 #content #content-blank p, #containerMain .containerTexte#container10 #content #content-blank p, #containerMain .containerTexte#container12 #content #content-blank p, #containerMain .containerTexte#container14 #content #content-blank p, #containerMain .containerTexte#container16 #content #content-blank p, #containerMain .containerTexte#container18 #content #content-blank p {
+  padding: 8px;
+  line-height: 25px;
+  text-align: justify;
+}
+
+#containerMain .containerTexte#container2 {
+  background-image: url("../SRC_site/partie 2/enfantv2.png");
+  background-position: top 20% left 80%;
+  background-repeat: no-repeat;
+  background-size: 9%;
+  margin-top: -20px;
+}
+
+@media only screen and (max-width: 480px) {
+  #containerMain .containerTexte#container2 {
+    background-image: none;
+  }
+}
+
+#containerMain .containerTexte#container2 #fleur {
+  z-index: 2;
+  width: 30%;
+  padding-top: 10%;
+  background-image: url("../SRC_site/partie 1/sol_fleurs2.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: -7.7% 0px 0px -0.5%;
+  z-index: 3;
+}
+
+#containerMain .containerTexte#container2 #arbre {
+  z-index: 2;
+  width: 18%;
+  padding-top: 28.2%;
+  background-image: url("../SRC_site/partie 1/arbre2.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: -28.19% 0px 0px 82%;
+  z-index: 3;
+}
+
+#containerMain .containerTexte#container2 #chateau {
+  z-index: 2;
+  width: 100%;
+  padding-top: 57%;
+  background-image: url("../SRC_site/partie 1/château.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: -59.1% 0px 0px 0%;
+}
+
+#containerMain .containerTexte#container2 #logo {
+  z-index: 3;
+  z-index: 2;
+  width: 12%;
+  padding-top: 12%;
+  background-image: url("../SRC_site/partie 1/logoo.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: -49.5% 0px 0px 1%;
+}
+
+#containerMain .containerTexte#container2 #content {
+  margin-top: 39.5%;
+}
+
+#containerMain .containerTexte#container2 #content #lien2 {
+  color: #9368a8;
+}
+
+#containerMain .containerTexte#container4 {
+  /* @include backgroundContainer($linkC4,$posC4,$sizeC4); */
+}
+
+#containerMain .containerTexte#container4 #poisson {
+  z-index: 2;
+  width: 5%;
+  padding-top: 5%;
+  background-image: url("../SRC_site/partie 3/poissonv2.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: -4.5% 0px 0px 93%;
+}
+
+#containerMain .containerTexte#container4 #barriere1 {
+  z-index: 2;
+  width: 12%;
+  padding-top: 8%;
+  background-image: url("../SRC_site/partie 3/barriere1.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: -17% 0px 0px 28.5%;
+}
+
+#containerMain .containerTexte#container4 #barriere2 {
+  z-index: 2;
+  width: 12%;
+  padding-top: 9%;
+  background-image: url("../SRC_site/partie 3/barriere2.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: -17% 0px 0px 18%;
+}
+
+#containerMain .containerTexte#container4 #content {
+  margin-top: 18%;
+}
+
+#containerMain .containerTexte#container4 #content #lien3 {
+  color: #ce6d25;
+}
+
+#containerMain .containerTexte#container6 {
+  /* @include backgroundContainer($linkC6,$posC6,$sizeC6); */
+}
+
+#containerMain .containerTexte#container6 #content #lien4 {
+  color: #c9b903;
+}
+
+#containerMain .containerTexte#container8 {
+  /* @include backgroundContainer($linkC8,$posC8,$sizeC8); */
+}
+
+#containerMain .containerTexte#container8 #arbre {
+  z-index: 2;
+  width: 14%;
+  padding-top: 22.9%;
+  background-image: url("../SRC_site/partie 7/arbrev3.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: -22.9% 0px 0px 85%;
+}
+
+#containerMain .containerTexte#container8 #enfant {
+  z-index: 2;
+  width: 9%;
+  padding-top: 11.5%;
+  background-image: url("../SRC_site/partie 7/enfantv2.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: -10% 0px 0px 30%;
+}
+
+#containerMain .containerTexte#container8 #content #lien5 {
+  color: #3e8e34;
+}
+
+#containerMain .containerTexte#container10 {
+  background-image: url("../SRC_site/partie 10/sol.png"), url("../SRC_site/partie 10/buisson.png");
+  background-position: top 100% left 146%, top 102% left 20%;
+  background-repeat: no-repeat;
+  background-size: 65%, 12%;
+}
+
+#containerMain .containerTexte#container10 #content #lien6 {
+  color: #2a6cb2;
+}
+
+#containerMain .containerTexte#container12 {
+  background-image: url("../SRC_site/partie 12/sol.png");
+  background-position: top 0%, left 0%;
+  background-repeat: no-repeat;
+  background-size: 30% 100%;
+}
+
+@media only screen and (max-width: 480px) {
+  #containerMain .containerTexte#container12 {
+    background-image: none;
+  }
+}
+
+#containerMain .containerTexte#container12 #chien {
+  z-index: 2;
+  width: 9%;
+  padding-top: 9%;
+  background-image: url("../SRC_site/partie 11/chien.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: -20% 0px 0px 50%;
+}
+
+#containerMain .containerTexte#container12 #enfants {
+  z-index: 2;
+  width: 25%;
+  padding-top: 20%;
+  background-image: url("../SRC_site/partie 12/enfants.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: 5.3% 0px 0px -3.8%;
+}
+
+@media only screen and (max-width: 480px) {
+  #containerMain .containerTexte#container12 #enfants {
+    display: none;
+  }
+}
+
+#containerMain .containerTexte#container12 #content {
+  margin-top: -12%;
+  margin-left: 25%;
+}
+
+@media only screen and (max-width: 480px) {
+  #containerMain .containerTexte#container12 #content {
+    margin-left: 1%;
+    margin-top: 12%;
+  }
+}
+
+#containerMain .containerTexte#container12 #content #lien7 {
+  color: #2a6cb2;
+}
+
+#containerMain .containerTexte#container14 {
+  /* @include backgroundContainer($linkC14,$posC14,$sizeC14); */
+  z-index: 3;
+}
+
+#containerMain .containerTexte#container14 #sol {
+  z-index: 2;
+  width: 35%;
+  padding-top: 11%;
+  background-image: url("../SRC_site/partie 13/sol.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: -9.1% 0px 0px 65%;
+}
+
+#containerMain .containerTexte#container14 #fleur {
+  z-index: 2;
+  width: 9%;
+  padding-top: 11%;
+  background-image: url("../SRC_site/partie 13/fleur.png");
+  background-size: 60%;
+  background-repeat: no-repeat;
+  margin: -15% 0px 0px 0%;
+}
+
+#containerMain .containerTexte#container14 #content {
+  margin-top: 2.2%;
+  margin-left: 13%;
+  width: 60%;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1280px) {
+  #containerMain .containerTexte#container14 #content {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #containerMain .containerTexte#container14 #content {
+    width: 98%;
+    margin: 0;
+    margin-left: 0.5%;
+  }
+}
+
+#containerMain .containerTexte#container14 #content #lien7 {
+  color: #2a6cb2;
+}
+
+#containerMain .containerTexte#container14 #content #content-blank #test {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1280px) {
+  #containerMain .containerTexte#container14 #content #content-blank #test {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #containerMain .containerTexte#container14 #content #content-blank #test {
+    display: block;
+  }
+}
+
+#containerMain .containerTexte#container14 #content #content-blank #test #bwg_container1_0 {
+  margin-left: 1.7%;
+  margin-top: 10%;
+  width: 55%;
+}
+
+@media only screen and (min-width: 1281px) and (max-width: 1540px) {
+  #containerMain .containerTexte#container14 #content #content-blank #test #bwg_container1_0 {
+    /*  margin-left:20%; */
+    margin-top: 1%;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1280px) {
+  #containerMain .containerTexte#container14 #content #content-blank #test #bwg_container1_0 {
+    width: 100%;
+    margin-left: 0%;
+    margin-top: 0%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #containerMain .containerTexte#container14 #content #content-blank #test #bwg_container1_0 {
+    width: 100%;
+    margin-left: -0.5%;
+    margin-top: 0%;
+  }
+}
+
+#containerMain .containerTexte#container14 #content #content-blank #test #wpmem_msg, #containerMain .containerTexte#container14 #content #content-blank #test #wpmem_reg {
+  top: 0;
+  padding: 20px;
+}
+
+#containerMain .containerTexte#container14 #content #content-blank #test #wpmem_msg p, #containerMain .containerTexte#container14 #content #content-blank #test #wpmem_reg p {
+  padding: 8px;
+  line-height: 25px;
+  text-align: justify;
+}
+
+#containerMain .containerTexte#container14 #content #content-blank #test #wpmem_reg {
+  top: -12%;
+  padding: -10% 0px 0px 0px;
+}
+
+#containerMain .containerTexte#container14 #content #content-blank #test .wpmem_msg {
+  top: -20%;
+  padding: 20px;
+}
+
+#containerMain .containerTexte#container14 #content #content-blank #test #lien65 {
+  color: #2a6cb2;
+}
+
+#containerMain .containerTexte#container14 #content #content-blank #test .slideShow {
+  margin-top: 1.5%;
+  min-width: 85%;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1280px) {
+  #containerMain .containerTexte#container14 #content #content-blank #test .slideShow {
+    min-width: 100%;
+    margin-top: -0.2%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #containerMain .containerTexte#container14 #content #content-blank #test .slideShow {
+    min-width: 100%;
+    margin-top: -0.2%;
+  }
+}
+
+#containerMain .containerTexte#container16 {
+  /* @include backgroundContainer($linkC16,$posC16,$sizeC16); */
+}
+
+#containerMain .containerTexte#container16 #enfant1 {
+  z-index: 2;
+  width: 10%;
+  padding-top: 8%;
+  background-image: url("../SRC_site/partie 15/enfant1.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: -6.4% 0px 0px 25%;
+}
+
+#containerMain .containerTexte#container16 #enfant2 {
+  z-index: 2;
+  width: 10%;
+  padding-top: 14%;
+  background-image: url("../SRC_site/partie 15/enfant2.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: -22.6% 0px 0px 65%;
+}
+
+#containerMain .containerTexte#container16 #content {
+  width: 100%;
+}
+
+#containerMain .containerTexte#container16 #content #lien9 {
+  color: green;
+}
+
+#containerMain .containerTexte#container16 #content #content-blank #wpforms-form-118 {
+  width: 100%;
+  z-index: 2;
+  margin-top: 8.5%;
+}
+
+#containerMain .containerTexte#container16 #content #content-blank #wpforms-form-118 .wpforms-field-container {
+  width: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+}
+
+#containerMain .containerTexte#container16 #content #content-blank #wpforms-form-118 .wpforms-field-container #wpforms-118-field_0-container, #containerMain .containerTexte#container16 #content #content-blank #wpforms-form-118 .wpforms-field-container #wpforms-118-field_1-container, #containerMain .containerTexte#container16 #content #content-blank #wpforms-form-118 .wpforms-field-container #wpforms-118-field_3-container, #containerMain .containerTexte#container16 #content #content-blank #wpforms-form-118 .wpforms-field-container #wpforms-118-field_4-container {
+  padding-top: 0.5%;
+  padding-bottom: 1%;
+  width: 25%;
+  display: -webkit-box;
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+}
+
+#containerMain .containerTexte#container16 #content #content-blank #wpforms-form-118 .wpforms-field-container #wpforms-118-field_0-container #wpforms-118-field_0, #containerMain .containerTexte#container16 #content #content-blank #wpforms-form-118 .wpforms-field-container #wpforms-118-field_0-container #wpforms-118-field_3, #containerMain .containerTexte#container16 #content #content-blank #wpforms-form-118 .wpforms-field-container #wpforms-118-field_1-container #wpforms-118-field_0, #containerMain .containerTexte#container16 #content #content-blank #wpforms-form-118 .wpforms-field-container #wpforms-118-field_1-container #wpforms-118-field_3, #containerMain .containerTexte#container16 #content #content-blank #wpforms-form-118 .wpforms-field-container #wpforms-118-field_3-container #wpforms-118-field_0, #containerMain .containerTexte#container16 #content #content-blank #wpforms-form-118 .wpforms-field-container #wpforms-118-field_3-container #wpforms-118-field_3, #containerMain .containerTexte#container16 #content #content-blank #wpforms-form-118 .wpforms-field-container #wpforms-118-field_4-container #wpforms-118-field_0, #containerMain .containerTexte#container16 #content #content-blank #wpforms-form-118 .wpforms-field-container #wpforms-118-field_4-container #wpforms-118-field_3 {
+  background-image: url("../SRC_site/formulaire/nom&prenom.png");
+  background-position: top 48% left 5%;
+  background-repeat: no-repeat;
+  background-size: 15%;
+  max-width: 70%;
+  text-align: center;
+  margin: 1%;
+  padding-left: 3.5%;
+  font-size: 1.3em;
+  border-radius: 50px;
+  border: 0px;
+  /* opacity: 0.5; */
+  /*  -webkit-box-shadow: 2px 2px 22px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 22px 1px rgba(0,0,0,0.75); */
+  -webkit-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.75);
+}
+
+#containerMain .containerTexte#container16 #content #content-blank #wpforms-form-118 .wpforms-field-container #wpforms-118-field_0-container #wpforms-118-field_1, #containerMain .containerTexte#container16 #content #content-blank #wpforms-form-118 .wpforms-field-container #wpforms-118-field_1-container #wpforms-118-field_1, #containerMain .containerTexte#container16 #content #content-blank #wpforms-form-118 .wpforms-field-container #wpforms-118-field_3-container #wpforms-118-field_1, #containerMain .containerTexte#container16 #content #content-blank #wpforms-form-118 .wpforms-field-container #wpforms-118-field_4-container #wpforms-118-field_1 {
+  background-image: url("../SRC_site/formulaire/mail.png");
+  background-position: top 48% left 5%;
+  background-repeat: no-repeat;
+  background-size: 15%;
+  max-width: 70%;
+  text-align: center;
+  margin: 1%;
+  padding-left: 3.5%;
+  font-size: 1.3em;
+  border-radius: 50px;
+  border: 0px;
+  /* opacity: 0.5; */
+  /*  -webkit-box-shadow: 2px 2px 22px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 22px 1px rgba(0,0,0,0.75); */
+  -webkit-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.75);
+}
+
+#containerMain .containerTexte#container16 #content #content-blank #wpforms-form-118 .wpforms-field-container #wpforms-118-field_0-container #wpforms-118-field_4, #containerMain .containerTexte#container16 #content #content-blank #wpforms-form-118 .wpforms-field-container #wpforms-118-field_1-container #wpforms-118-field_4, #containerMain .containerTexte#container16 #content #content-blank #wpforms-form-118 .wpforms-field-container #wpforms-118-field_3-container #wpforms-118-field_4, #containerMain .containerTexte#container16 #content #content-blank #wpforms-form-118 .wpforms-field-container #wpforms-118-field_4-container #wpforms-118-field_4 {
+  background-image: url("../SRC_site/formulaire/sujet.png");
+  background-position: top 48% left 5%;
+  background-repeat: no-repeat;
+  background-size: 15%;
+  max-width: 70%;
+  text-align: center;
+  margin: 1%;
+  padding-left: 3.5%;
+  font-size: 1.3em;
+  border-radius: 50px;
+  border: 0px;
+  /* opacity: 0.5; */
+  /*  -webkit-box-shadow: 2px 2px 22px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 22px 1px rgba(0,0,0,0.75); */
+  -webkit-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.75);
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1280px) {
+  #containerMain .containerTexte#container16 #content #content-blank #wpforms-form-118 .wpforms-field-container #wpforms-118-field_0-container, #containerMain .containerTexte#container16 #content #content-blank #wpforms-form-118 .wpforms-field-container #wpforms-118-field_1-container, #containerMain .containerTexte#container16 #content #content-blank #wpforms-form-118 .wpforms-field-container #wpforms-118-field_3-container, #containerMain .containerTexte#container16 #content #content-blank #wpforms-form-118 .wpforms-field-container #wpforms-118-field_4-container {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #containerMain .containerTexte#container16 #content #content-blank #wpforms-form-118 .wpforms-field-container #wpforms-118-field_0-container, #containerMain .containerTexte#container16 #content #content-blank #wpforms-form-118 .wpforms-field-container #wpforms-118-field_1-container, #containerMain .containerTexte#container16 #content #content-blank #wpforms-form-118 .wpforms-field-container #wpforms-118-field_3-container, #containerMain .containerTexte#container16 #content #content-blank #wpforms-form-118 .wpforms-field-container #wpforms-118-field_4-container {
+    width: 100%;
+  }
+}
+
+#containerMain .containerTexte#container16 #content #content-blank #wpforms-form-118 .wpforms-field-container #wpforms-118-field_2-container {
+  padding-top: 0.5%;
+  padding-bottom: 1%;
+  width: 42.5%;
+}
+
+#containerMain .containerTexte#container16 #content #content-blank #wpforms-form-118 .wpforms-field-container #wpforms-118-field_2-container #wpforms-118-field_2 {
+  background-image: url("../SRC_site/formulaire/com.png");
+  background-position: top 8% left 3%;
+  background-repeat: no-repeat;
+  background-size: 6%;
+  padding: 3.5% 3% 1% 10%;
+  margin-bottom: 1%;
+  border-radius: 50px;
+  border: 0px;
+  -webkit-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.75);
+  font-size: 1.2em;
+  height: 250px;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1280px) {
+  #containerMain .containerTexte#container16 #content #content-blank #wpforms-form-118 .wpforms-field-container #wpforms-118-field_2-container {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #containerMain .containerTexte#container16 #content #content-blank #wpforms-form-118 .wpforms-field-container #wpforms-118-field_2-container {
+    width: 70%;
+  }
+}
+
+#containerMain .containerTexte#container16 #content #content-blank #wpforms-form-118 .wpforms-submit-container {
+  display: -webkit-box;
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+}
+
+#containerMain .containerTexte#container16 #content #content-blank #wpforms-form-118 .wpforms-submit-container #wpforms-submit-118 {
+  background-image: url("../SRC_site/formulaire/envoi.png");
+  background-position: top 48% left 5%;
+  background-repeat: no-repeat;
+  background-size: 10%;
+  max-width: 70%;
+  text-align: center;
+  margin: 1%;
+  padding-left: 3.5%;
+  font-size: 1.3em;
+  border-radius: 50px;
+  border: 0px;
+  /* opacity: 0.5; */
+  /*  -webkit-box-shadow: 2px 2px 22px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 22px 1px rgba(0,0,0,0.75); */
+  -webkit-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.75);
+  width: 25%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1280px) {
+  #containerMain .containerTexte#container16 #content #content-blank #wpforms-form-118 .wpforms-submit-container #wpforms-submit-118 {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #containerMain .containerTexte#container16 #content #content-blank #wpforms-form-118 .wpforms-submit-container #wpforms-submit-118 {
+    width: 75%;
+  }
+}
+
+#containerMain .containerTexte#container18 {
+  margin: 0px auto 20px auto;
+  z-index: 2;
+}
+
+#containerMain .containerTexte#container18 #enfants {
+  z-index: 2;
+  width: 10%;
+  padding-top: 11%;
+  background-image: url("../SRC_site/partie 17/enfant2.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: -33% 0px 0px 5%;
+}
+
+#containerMain .containerTexte#container18 #enfants2 {
+  z-index: 2;
+  width: 10%;
+  padding-top: 13%;
+  background-image: url("../SRC_site/partie 17/enfant.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: -3% 0px 0px 40%;
+}
+
+#containerMain .containerTexte#container18 #herbe {
+  z-index: 2;
+  width: 41.3%;
+  padding-top: 9%;
+  background-image: url("../SRC_site/partie 17/herbe.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: 3.5% 0px 0px 0%;
+}
+
+#containerMain .containerTexte#container18 iframe {
+  width: 100%;
+  margin-top: -0.5%;
+  /* @media only screen and  (min-width : 1281px) and (max-width: 1540px) {
+                    height:500px;
+                 }
+                 @media only screen and  (min-width : 481px) and (max-width: 1280px) {
+                    height:350px;
+                 }
+                 @media only screen and  (max-width: 480px){
+                    height:200px;
+                 }   */
+}
+
+#containerMain .containerTexte#container18 #foot {
+  z-index: 2;
+  width: 100%;
+  padding-top: 20%;
+  background-image: url("../SRC_site/partie 18/bottom.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: -15% 0px 0px 0%;
+  display: -webkit-box;
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+}
+
+@media only screen and (max-width: 480px) {
+  #containerMain .containerTexte#container18 #foot {
+    display: block;
+  }
+}
+
+#containerMain .containerTexte#container18 #foot #part1, #containerMain .containerTexte#container18 #foot #part2 {
+  width: 26%;
+  padding: 0.8% 5% 0% 5%;
+  margin-top: -12%;
+}
+
+#containerMain .containerTexte#container18 #foot #part1 h1, #containerMain .containerTexte#container18 #foot #part2 h1 {
+  font-size: 1.2em;
+  padding-bottom: 2%;
+}
+
+#containerMain .containerTexte#container18 #foot #part1 p, #containerMain .containerTexte#container18 #foot #part2 p {
+  padding: 8px;
+  line-height: 25px;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 480px) {
+  #containerMain .containerTexte#container18 #foot #part1, #containerMain .containerTexte#container18 #foot #part2 {
+    width: 80%;
+    margin: 1%;
+    padding: 0%;
+  }
+}
+
+#containerMain .containerTexte#container18 #foot #part1 {
+  background-image: url("../SRC_site/partie 18/localisation.png");
+  background-position: top 50% left 5%;
+  background-repeat: no-repeat;
+  background-size: 10%;
+}
+
+#containerMain .containerTexte#container18 #foot #part2 {
+  background-image: url("../SRC_site/partie 18/separation.png"), url("../SRC_site/partie 18/tel.png"), url("../SRC_site/partie 18/separation.png"), url("../SRC_site/partie 18/fb.png");
+  background-position: top 40% left 0%, top 50% left 5%, top 50% left 85%, top 50% left 100%;
+  background-repeat: no-repeat;
+  background-size: 0.6%, 10%, 0.5%, 10%;
+}
+
+#containerMain .containerDessin {
+  background-color: #3c9135;
+  width: 100%;
+  padding-top: 28.4%;
+}
+
+#containerMain .containerDessin#container5, #containerMain .containerDessin#container7, #containerMain .containerDessin#container9, #containerMain .containerDessin#container11, #containerMain .containerDessin#container13, #containerMain .containerDessin#container15, #containerMain .containerDessin#container17 {
+  display: -webkit-box;
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  -webkit-box-align: normal;
+          align-items: normal;
+  -webkit-align-items: normal;
+  -ms-flex-align: normal;
+  -webkit-box-pack: normal;
+          justify-content: normal;
+  -webkit-justify-content: normal;
+  -ms-flex-pack: normal;
+}
+
+#containerMain .containerDessin#container {
+  padding-top: 50.8%;
+  /* @include display-flex(column,nowrap,normal,normal);  */
+}
+
+#containerMain .containerDessin#container3 {
+  background-image: url("../SRC_site/partie 3/rivierev2.png"), url("../SRC_site/partie 3/solv2.png"), url("../SRC_site/partie 3/sol2v2.png");
+  background-position: top 215% left 25%, top 100% left 0%, top -0.5% left 100.5%;
+  background-repeat: no-repeat;
+  background-size: 100%, 50%, 60%;
+}
+
+#containerMain .containerDessin#container5 {
+  background-image: url("../SRC_site/partie 5/buisson_solv2.png");
+  background-position: top 100% left 0%;
+  background-repeat: no-repeat;
+  background-size: 35%, 25%;
+}
+
+#containerMain .containerDessin#container5 #enfant {
+  z-index: 2;
+  width: 20%;
+  padding-top: 11%;
+  background-image: url("../SRC_site/partie 5/enfantv2.png");
+  background-size: 40%;
+  background-repeat: no-repeat;
+  margin: -22% 0px 0px 25%;
+}
+
+#containerMain .containerDessin#container5 #buisson {
+  z-index: 2;
+  width: 25%;
+  padding-top: 17%;
+  background-image: url("../SRC_site/partie 5/buisson_sol2v2.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: -20.85% 0px 0px 75%;
+}
+
+#containerMain .containerDessin#container5 #ecureil {
+  z-index: 2;
+  width: 5%;
+  padding-top: 5.5%;
+  background-image: url("../SRC_site/partie 5/ecureilv2.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: -16.19% 0px 0px 48%;
+}
+
+#containerMain .containerDessin#container7 {
+  background-image: url("../SRC_site/partie 7/solv2.png"), url("../SRC_site/partie 7/solv3.png");
+  background-position: top 0% left 0%, top 100% left 100%;
+  background-repeat: no-repeat;
+  background-size: 35%, 25%;
+}
+
+#containerMain .containerDessin#container7 #arbre2 {
+  z-index: 2;
+  width: 9%;
+  padding-top: 21%;
+  background-image: url("../SRC_site/partie 6/arbrev2.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: -46% 0px 0px 9%;
+}
+
+#containerMain .containerDessin#container9 {
+  background-image: url("../SRC_site/partie 9/herbe.png"), url("../SRC_site/partie 9/eau.png"), url("../SRC_site/partie 9/sol.png");
+  background-position: top 100% left 1%, top 0% left 0%, top 100% left 100%;
+  background-repeat: no-repeat;
+  background-size: 35%, 25%, 26%, 35%;
+}
+
+#containerMain .containerDessin#container9 #enfant {
+  z-index: 2;
+  width: 32%;
+  padding-top: 17%;
+  background-image: url("../SRC_site/partie 9/enfant.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: -34% 0px 0px 38%;
+}
+
+#containerMain .containerDessin#container11 {
+  background-image: url("../SRC_site/partie 11/fleur.png"), url("../SRC_site/partie 11/fleur.png"), url("../SRC_site/partie 11/fleur.png"), url("../SRC_site/partie 11/fleur.png"), url("../SRC_site/partie 11/fleur.png"), url("../SRC_site/partie 11/fleur.png"), url("../SRC_site/partie 11/sol.png"), url("../SRC_site/partie 11/sol2.png"), url("../SRC_site/partie 11/fleur.png");
+  background-position: top 50% left 39%, top 25% left 58%, top 1% left 75%, top 83% left 68%, top 30% left 94%, top 60% left 99%, top 0% left 0%, top 100% left 100%, top 60% left 15%;
+  background-repeat: no-repeat;
+  background-size: 4%, 3%, 4%, 4%, 4%, 4%, 64.5%, 35%, 4%;
+}
+
+#containerMain .containerDessin#container11 #ours {
+  z-index: 2;
+  width: 15%;
+  padding-top: 15%;
+  background-image: url("../SRC_site/partie 10/ours.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: -50% 0px 0px 80%;
+}
+
+#containerMain .containerDessin#container13 {
+  background-image: url("../SRC_site/partie 13/riviere.png");
+  background-position: top -30% left 100%;
+  background-repeat: no-repeat;
+  background-size: 84.1%;
+}
+
+#containerMain .containerDessin#container15 {
+  background-image: url("../SRC_site/partie 15/oiseau.png"), url("../SRC_site/partie 15/sol.png"), url("../SRC_site/partie 15/sol2.png");
+  background-position: top 70% left 95%, top 100% left 0%, top 101% right 0%;
+  background-repeat: no-repeat;
+  background-size: 7%, 25%, 65%;
+}
+
+#containerMain .containerDessin#container15 #enfant {
+  z-index: 2;
+  width: 13%;
+  padding-top: 18%;
+  background-image: url("../SRC_site/partie 14/enfant.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: -54% 0px 0px 1%;
+  z-index: 3;
+}
+
+@media only screen and (max-width: 481px) {
+  #containerMain .containerDessin#container15 #enfant {
+    display: none;
+  }
+}
+
+#containerMain .containerDessin#container17 {
+  background-image: url("../SRC_site/partie 17/herbe2.png"), url("../SRC_site/partie 17/marelle.png"), url("../SRC_site/partie 17/abeille.png"), url("../SRC_site/partie 17/enfant3.png"), url("../SRC_site/partie 17/escargot.png"), url("../SRC_site/partie 17/riviere.png");
+  background-position: top 100% left 100%, top 10% left 7%, top 70% left 25%, top 90% left 68%, top 88% left 77%, top -1% left 101%;
+  background-repeat: no-repeat;
+  background-size: 48%, 7%, 4%, 10%, 6%, 21%;
+}
+/*# sourceMappingURL=style.css.map */

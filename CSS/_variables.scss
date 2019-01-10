@@ -1,0 +1,272 @@
+$width-small1:400px;
+$width-small2:600px;
+$width-small3:675px;
+$width-medium3:750px;
+$width-medium1:825px;
+$width-medium2:990px;
+$space:20px;
+$space2:10px;
+
+$linkC1: url('../SRC_site/partie 1/château.png');
+$posC1: top -54% left 0%;
+$sizeC1: 100%;
+
+$widthC1Item1: 12%;
+$heightC1Item1: 12%;
+$linkC1Item1: url('../SRC_site/partie 1/logoo.png');;
+$sizeC1Item1: 100%;
+$posC1Item1: -49.5% 0px 0px 1%;
+
+$linkC2: url('../SRC_site/partie 2/enfantv2.png');
+$posC2:  top 20% left 80%;
+$sizeC2: 9%;
+
+$widthC2Item1: 30%;
+$heightC2Item1: 10%;
+$linkC2Item1: url('../SRC_site/partie 1/sol_fleurs2.png');
+$sizeC2Item1: 100%;
+$posC2Item1: -7.7% 0px 0px -0.5%;
+
+$widthC2Item2: 18%;
+$heightC2Item2: 28.2%;
+$linkC2Item2: url('../SRC_site/partie 1/arbre2.png');
+$sizeC2Item2: 100%;
+$posC2Item2: -28.19% 0px 0px 82%;
+
+
+$widthC2Item3: 100%;
+$heightC2Item3: 57%;
+$linkC2Item3: url('../SRC_site/partie 1/château.png');
+$sizeC2Item3: 100%;
+$posC2Item3: -59.1% 0px 0px 0%;
+
+$linkC3:  url('../SRC_site/partie 3/rivierev2.png'),  url('../SRC_site/partie 3/solv2.png'), url('../SRC_site/partie 3/sol2v2.png');
+$posC3: top 215% left 25%,top 100% left 0%,top -0.5% left 100.5% ;
+$sizeC3: 100%, 50%, 60%;
+
+/* $linkC4: url('../SRC_site/partie 4/cheminv2.png');
+$posC4: top 0% left -12.5%;
+$sizeC4: 31.5%;  */
+
+$widthC4Item1: 5%;
+$heightC4Item1: 5%;
+$linkC4Item1: url('../SRC_site/partie 3/poissonv2.png');
+$sizeC4Item1: 100%;
+$posC4Item1: -4.5% 0px 0px 93%;
+
+$widthC4Item2: 12%;
+$heightC4Item2: 8%;
+$linkC4Item2: url('../SRC_site/partie 3/barriere1.png');
+$sizeC4Item2: 100%;
+$posC4Item2: -17% 0px 0px 28.5%;
+
+$widthC4Item3: 12%;
+$heightC4Item3: 9%;
+$linkC4Item3: url('../SRC_site/partie 3/barriere2.png');
+$sizeC4Item3: 100%;
+$posC4Item3: -17% 0px 0px 18%;
+
+
+
+
+
+
+
+$linkC5: url('../SRC_site/partie 5/buisson_solv2.png');
+$posC5: top 100% left 0%;
+$sizeC5: 35%, 25%;
+
+$widthC5Item1: 20%;
+$heightC5Item1: 11%;
+$linkC5Item1: url('../SRC_site/partie 5/enfantv2.png');
+$sizeC5Item1: 40%;
+$posC5Item1: -22% 0px 0px 25%;
+
+$widthC5Item2: 25%;
+$heightC5Item2: 17%;
+$linkC5Item2: url('../SRC_site/partie 5/buisson_sol2v2.png');
+$sizeC5Item2: 100%;
+$posC5Item2: -20.85% 0px 0px 75%;
+
+$widthC5Item3: 5%;
+$heightC5Item3: 5.5%;
+$linkC5Item3: url('../SRC_site/partie 5/ecureilv2.png');
+$sizeC5Item3: 100%;
+$posC5Item3: -16.19% 0px 0px 48%;
+
+/* $linkC6: url('../SRC_site/partie 6/cheminv2.png');
+$posC6: top 0% left 104%;
+$sizeC6: 29%; */
+
+$linkC7: url('../SRC_site/partie 7/solv2.png'),url('../SRC_site/partie 7/solv3.png');
+$posC7: top 0% left 0%, top 100% left 100%;
+$sizeC7: 35%, 25%;
+
+$widthC7Item1: 9%;
+$heightC7Item1: 21%;
+$linkC7Item1: url('../SRC_site/partie 6/arbrev2.png');
+$sizeC7Item1: 100%;
+$posC7Item1: -46% 0px 0px 9%;
+
+
+
+/* $linkC8: url('../SRC_site/partie 8/chemin.png');
+$posC8: top 0% left 90.2%;
+$sizeC8: 26.5%; */
+
+$widthC8Item1: 14%;
+$heightC8Item1: 22.9%;
+$linkC8Item1: url('../SRC_site/partie 7/arbrev3.png');
+$sizeC8Item1: 100%;
+$posC8Item1: -22.9% 0px 0px 85%;
+
+$widthC8Item2: 9%;
+$heightC8Item2: 11.5%;
+$linkC8Item2:  url('../SRC_site/partie 7/enfantv2.png');
+$sizeC8Item2: 100%;
+$posC8Item2: -10% 0px 0px 30%;
+
+$linkC9: url('../SRC_site/partie 9/herbe.png'), url('../SRC_site/partie 9/eau.png'), url('../SRC_site/partie 9/sol.png');
+$posC9: top 100% left 1%, top 0% left 0%, top 100% left 100%;
+$sizeC9: 35%, 25%, 26%, 35%;
+
+$widthC9Item1: 32%;
+$heightC9Item1: 17%;
+$linkC9Item1: url('../SRC_site/partie 9/enfant.png');
+$sizeC9Item1: 100%;
+$posC9Item1: -34% 0px 0px 38%;
+
+$linkC10: url('../SRC_site/partie 10/sol.png'),  url('../SRC_site/partie 10/buisson.png');
+$posC10:  top 100% left 146%, top 102% left 20%;
+$sizeC10: 65%, 12%;
+
+$linkC11: url('../SRC_site/partie 11/fleur.png'),url('../SRC_site/partie 11/fleur.png'),url('../SRC_site/partie 11/fleur.png'),url('../SRC_site/partie 11/fleur.png'),url('../SRC_site/partie 11/fleur.png'),url('../SRC_site/partie 11/fleur.png'),url('../SRC_site/partie 11/sol.png'), url('../SRC_site/partie 11/sol2.png'), url('../SRC_site/partie 11/fleur.png');
+$posC11: top 50% left 39%,top 25% left 58%,top 1% left 75%,top 83% left 68%,top 30% left 94%,top 60% left 99%,top 0% left 0%, top 100% left 100%, top 60% left 15%;
+$sizeC11: 4%,3%,4%,4%,4%,4%,64.5%, 35%, 4%;
+
+$widthC11Item1: 15%;
+$heightC11Item1: 15%;
+$linkC11Item1: url('../SRC_site/partie 10/ours.png');
+$sizeC11Item1: 100%;
+$posC11Item1: -50% 0px 0px 80%;
+
+
+$linkC12: url('../SRC_site/partie 12/sol.png');
+$posC12: top 0%, left 0%;
+$sizeC12: 30% 100%;
+
+$widthC12Item1: 9%;
+$heightC12Item1: 9%;
+$linkC12Item1: url('../SRC_site/partie 11/chien.png');
+$sizeC12Item1: 100%;
+$posC12Item1: -20% 0px 0px 50%;
+
+$widthC12Item2: 25%;
+$heightC12Item2: 20%;
+$linkC12Item2: url('../SRC_site/partie 12/enfants.png');
+$sizeC12Item2: 100%;
+$posC12Item2: 5.3% 0px 0px -3.8%;
+
+
+
+$linkC13: url('../SRC_site/partie 13/riviere.png');
+$posC13: top -30% left 100%;
+$sizeC13: 84.1%;
+
+/* $linkC14: url('../SRC_site/partie 14/enfant.png');
+$posC14: top 40% left 10%;
+$sizeC14: 12%; */
+
+$widthC14Item1: 35%;
+$heightC14Item1: 11%;
+$linkC14Item1: url('../SRC_site/partie 13/sol.png');
+$sizeC14Item1: 100%;
+$posC14Item1: -9.1% 0px 0px 65%;
+
+$widthC14Item2: 9%;
+$heightC14Item2: 11%;
+$linkC14Item2: url('../SRC_site/partie 13/fleur.png');
+$sizeC14Item2: 60%;
+$posC14Item2: -15% 0px 0px 0%;
+
+
+$linkC15: url('../SRC_site/partie 15/oiseau.png'), url('../SRC_site/partie 15/sol.png'), url('../SRC_site/partie 15/sol2.png');
+$posC15: top 70% left 95%, top 100% left 0%, top 101% right 0%;
+$sizeC15: 7%, 25%, 65%;
+
+$widthC15Item1: 13%;
+$heightC15Item1: 18%;
+$linkC15Item1: url('../SRC_site/partie 14/enfant.png');
+$sizeC15Item1: 100%;
+$posC15Item1: -54% 0px 0px 1%;
+
+/* $linkC16: url('../SRC_site/partie 16/chemin.png');
+$posC16: top 50% left 81.3%;
+$sizeC16: 27%; */
+
+$widthC16Item1: 10%;
+$heightC16Item1: 8%;
+$linkC16Item1: url('../SRC_site/partie 15/enfant1.png');
+$sizeC16Item1: 100%;
+$posC16Item1: -6.4% 0px 0px 25%;
+
+$widthC16Item2: 10%;
+$heightC16Item2: 14%;
+$linkC16Item2: url('../SRC_site/partie 15/enfant2.png');
+$sizeC16Item2: 100%;
+$posC16Item2: -22.6% 0px 0px 65%;
+
+$linkNom: url('../SRC_site/formulaire/nom&prenom.png');
+$linkSujet: url('../SRC_site/formulaire/sujet.png');
+$linkEmail: url('../SRC_site/formulaire/mail.png');
+$linkSubmit: url('../SRC_site/formulaire/envoi.png');
+$posForm: top 48% left 5%;
+$sizeForm: 15%;
+
+$linkC17Com:  url('../SRC_site/formulaire/com.png');
+$posC17Com: top 8% left 3%;
+$sizeC17Com: 6%;
+
+
+$linkC17: url('../SRC_site/partie 17/herbe2.png'), url('../SRC_site/partie 17/marelle.png'), url('../SRC_site/partie 17/abeille.png'), url('../SRC_site/partie 17/enfant3.png'), url('../SRC_site/partie 17/escargot.png'), url('../SRC_site/partie 17/riviere.png');
+$posC17: top 100% left 100%, top 10% left 7%, top 70% left 25%, top 90% left 68%, top 88% left 77%, top -1% left 101%;
+$sizeC17: 48%, 7%, 4%, 10%, 6%, 21%;
+
+/* $linkC18: url('../SRC_site/partie 8/chemin.png');
+$posC18: top 0% left 90.2%;
+$sizeC18: 26.5%; */
+
+$widthC18Item1: 10%;
+$heightC18Item1: 11%;
+$linkC18Item1: url('../SRC_site/partie 17/enfant2.png');
+$sizeC18Item1: 100%;
+$posC18Item1: -33% 0px 0px 5%;
+
+$widthC18Item2: 10%;
+$heightC18Item2: 13%;
+$linkC18Item2: url('../SRC_site/partie 17/enfant.png');
+$sizeC18Item2: 100%;
+$posC18Item2: -3% 0px 0px 40%;
+
+$widthC18Item3: 41.3%;
+$heightC18Item3: 9%;
+$linkC18Item3: url('../SRC_site/partie 17/herbe.png');
+$sizeC18Item3: 100%;
+$posC18Item3: 3.5% 0px 0px 0%;
+
+$widthC18Item4: 100%;
+$heightC18Item4: 20%;
+$linkC18Item4: url('../SRC_site/partie 18/bottom.png');
+$sizeC18Item4: 100%;
+$posC18Item4: -15% 0px 0px 0%;
+
+
+
+
+$linkFooter1: url('../SRC_site/partie 18/localisation.png');
+$posFooter1: top 50% left 5%;
+$sizeFooter1: 10%; 
+
+$linkFooter2: url('../SRC_site/partie 18/separation.png'),url('../SRC_site/partie 18/tel.png'),url('../SRC_site/partie 18/separation.png'),url('../SRC_site/partie 18/fb.png');
+$posFooter2: top 40% left 0%, top 50% left 5%, top 50% left 85%, top 50% left 100%;
+$sizeFooter2: 0.6%, 10%, 0.5%, 10%; 

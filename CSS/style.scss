@@ -1,0 +1,527 @@
+@import "_reset.scss";
+@import "_variables.scss";
+@import "_mixins.scss";
+  
+//Chemin qui parcoure le site
+/* #cheminMain{
+    z-index: 1;//OU 1 pour chemin
+    position:relative;
+    background-color:transparent;
+    background-image:  url('../SRC_site/backgroundv3.png');
+    background-position: top 77.9% left 46.4%;
+    background-repeat: no-repeat;
+    float:left;
+    width:100%;
+    height:10177px;
+}  */
+
+/* Style pour le menu responsive principal*/
+#responsiveMenu{
+    width:12.9%;
+    height:500px;
+    margin-left:87.1%;
+}
+/* Fin Style pour le menu responsive principal*/
+
+.userLog{
+    padding:10px;
+}
+#menuFixed{
+    position:fixed;
+    top:0;
+    right:0;
+    z-index:9; 
+    @media only screen and  (max-width: 600px){// 445 
+        width:70%;
+        margin-left:5%;
+    } 
+    .mega-menu-wrap{
+        .mega-menu-toggle{
+            margin-top:20px;
+            margin-right:15px;
+            z-index: 99;
+            .mega-toggle-blocks-right{
+                #mega-toggle-block-1{
+                    background-color:white;
+                    padding-right:9%;
+                }
+            }
+        }
+    }
+}
+
+/* Menu de navigation à faire en responsive */
+#panelUser{
+    background-color:#8dae40;
+    position:fixed;
+    width:20%;
+    margin: 5% auto;
+    margin-top:10.8%;
+    left: 0;
+    right: 0;
+    height:auto;
+    z-index: 5;
+    #btnForm{
+        border:1px solid white;
+        position:absolute;
+        top:0;
+        right:0;
+        width:40px;
+        height:40px;
+        font-size:1.2em;
+    }
+    @media only screen and  (min-width : 1281px) and (max-width: 1540px) {//1201 
+        width:30%;
+    }
+    @media only screen and  (min-width : 481px) and (max-width: 1280px) {//1201 
+        width:40%;
+    }
+    @media only screen and  (max-width: 735px){// 445 
+        width:60%;
+    } 
+    @media only screen and  (max-width: 480px){// 445 
+        width:90%;
+        text-align:center;
+    }      
+}
+#containerMain{
+    margin-bottom:-1%;
+    @include display-flex(column,nowrap,normal,normal); 
+    .containerTexte{
+        width:100%;
+        &#container2, &#container4, &#container6, &#container8, &#container10, &#container12, &#container14, &#container16, &#container18{
+            background-color: white;
+            @include display-flex(column,nowrap,normal,normal); 
+            height:auto;
+            min-height:540px;
+            #content{
+                width:50%;
+                @media only screen and  (min-width : 1281px) and (max-width: 1540px) {//1201 
+                    /*  margin-left:20%; */
+                    width:65%;
+                }
+                @media only screen and  (min-width : 481px) and (max-width: 1280px) {//1201 
+                    width:70%;
+                }
+                @media only screen and  (max-width: 480px){// 445 
+                    width:98%;
+                }     
+                .titreMenu{
+                    text-decoration: underline;
+                    margin-left:36%; 
+                    margin-bottom:2%;
+                    font-size:1.2em;   
+                }
+                #content-blank{
+                       margin-left: 1%;  
+                    p{
+                        padding:8px;
+                        line-height: 25px;
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+        &#container2{
+            @include backgroundContainer($linkC2,$posC2,$sizeC2);
+            margin-top:-20px;
+            @media only screen and  (max-width: 480px){// 445 
+                background-image:none;
+            }  
+            #fleur{
+                @include backgroundContainerDessinResp($widthC2Item1,$heightC2Item1,$linkC2Item1,$sizeC2Item1,$posC2Item1);
+                z-index:3;
+            }
+            #arbre{
+                @include backgroundContainerDessinResp($widthC2Item2,$heightC2Item2,$linkC2Item2,$sizeC2Item2,$posC2Item2);
+                z-index:3;
+            }
+            #chateau{
+                @include backgroundContainerDessinResp($widthC2Item3,$heightC2Item3,$linkC2Item3,$sizeC2Item3,$posC2Item3);
+            }
+            #logo{     
+                z-index:3;
+                @include backgroundContainerDessinResp($widthC1Item1,$heightC1Item1,$linkC1Item1,$sizeC1Item1,$posC1Item1);     
+            }
+            #content{
+                margin-top:39.5%;
+                #lien2{
+                    color:#9368a8;
+                }
+            }   
+        }
+        &#container4{
+            /* @include backgroundContainer($linkC4,$posC4,$sizeC4); */
+            #poisson{   
+                @include backgroundContainerDessinResp($widthC4Item1,$heightC4Item1,$linkC4Item1,$sizeC4Item1,$posC4Item1);
+            }
+            #barriere1{   
+                @include backgroundContainerDessinResp($widthC4Item2,$heightC4Item2,$linkC4Item2,$sizeC4Item2,$posC4Item2);
+            }
+            #barriere2{   
+                @include backgroundContainerDessinResp($widthC4Item3,$heightC4Item3,$linkC4Item3,$sizeC4Item3,$posC4Item3);
+            }
+            #content{
+                margin-top:18%;
+                #lien3{
+                    color:#ce6d25;  
+                }
+            }
+        }
+        &#container6{
+            /* @include backgroundContainer($linkC6,$posC6,$sizeC6); */
+            #content{
+                #lien4{
+                    color:#c9b903;
+                }
+            }
+        } 
+        &#container8{
+            /* @include backgroundContainer($linkC8,$posC8,$sizeC8); */
+            #arbre{
+                @include backgroundContainerDessinResp($widthC8Item1,$heightC8Item1,$linkC8Item1,$sizeC8Item1,$posC8Item1);
+            }
+            #enfant{
+                @include backgroundContainerDessinResp($widthC8Item2,$heightC8Item2,$linkC8Item2,$sizeC8Item2,$posC8Item2);
+            }
+            #content{
+                #lien5{
+                    color:#3e8e34;
+                }
+            }
+        } 
+        &#container10{
+            @include backgroundContainer($linkC10,$posC10,$sizeC10);
+            #content{
+                #lien6{
+                    color:#2a6cb2;
+                }
+            }
+        }
+        &#container12{
+            @include backgroundContainer($linkC12,$posC12,$sizeC12); 
+            @media only screen and  (max-width: 480px){// 445 
+                background-image:none;
+            }  
+            #chien{
+                @include backgroundContainerDessinResp($widthC12Item1,$heightC12Item1,$linkC12Item1,$sizeC12Item1,$posC12Item1);            
+            }
+            #enfants{
+                @include backgroundContainerDessinResp($widthC12Item2,$heightC12Item2,$linkC12Item2,$sizeC12Item2,$posC12Item2);  
+                @media only screen and  (max-width: 480px){// 445 
+                    display: none;
+                }  
+            } 
+            #content{
+                margin-top:-12%;
+                margin-left:25%;
+                @media only screen and  (max-width: 480px){// 445 
+                    margin-left:1%;
+                    margin-top:12%;
+                }  
+                #lien7{
+                    color:#2a6cb2;
+                }
+            }
+        }
+        &#container14{
+            /* @include backgroundContainer($linkC14,$posC14,$sizeC14); */
+            z-index:3;
+            #sol{
+                @include backgroundContainerDessinResp($widthC14Item1,$heightC14Item1,$linkC14Item1,$sizeC14Item1,$posC14Item1);                
+            }
+            #fleur{
+                @include backgroundContainerDessinResp($widthC14Item2,$heightC14Item2,$linkC14Item2,$sizeC14Item2,$posC14Item2); 
+            } 
+            #content{
+                margin-top:2.2%;
+                margin-left:13%;
+                width:60%;
+                @media only screen and  (min-width : 481px) and (max-width: 1280px) {//1201 
+                    width:80%;
+                }
+                @media only screen and  (max-width: 480px){// 445 
+                    width:98%;
+                    margin:0;
+                    margin-left:0.5%;
+                }
+                #lien7{
+                    color:#2a6cb2;
+                }
+                #content-blank{
+                    #test{
+                        display: flex;
+                        @media only screen and  (min-width : 481px) and (max-width: 1280px) {//1201 
+                            display:block;
+                        }
+                        @media only screen and  (max-width: 480px){// 445 
+                            display:block;
+                        }
+                        #bwg_container1_0{
+                            margin-left:1.7%;
+                            margin-top:10%;
+                            width:55%;
+                            @media only screen and  (min-width : 1281px) and (max-width: 1540px) {//1201 
+                               /*  margin-left:20%; */
+                                margin-top:1%;
+                            }
+                            @media only screen and  (min-width : 481px) and (max-width: 1280px) {//1201 
+                                width:100%;
+                                margin-left:0%;
+                                margin-top:0%;
+                            }
+                            @media only screen and  (max-width: 480px){// 445 
+                                width:100%;
+                                margin-left:-0.5%;
+                                margin-top:0%;
+                            }        
+                        }
+                        #wpmem_msg, #wpmem_reg{
+                            @extend #panelUser;
+                            top:0;
+                            padding:20px;
+                            p{
+                                padding:8px;
+                                line-height: 25px;
+                                text-align: justify;
+                            }
+                        }
+                        #wpmem_reg{
+                            top:-12%;
+                            padding:-10% 0px 0px 0px;
+                        }
+                        .wpmem_msg{
+                            @extend #panelUser;
+                            top:-20%;
+                            padding:20px;
+                        }
+                        #lien65{
+                            color:#2a6cb2;
+                        }
+                        .slideShow{
+                            margin-top:1.5%;
+                            min-width: 85%; 
+                            @media only screen and  (min-width : 481px) and (max-width: 1280px) {//1201 
+                                min-width:100%;
+                                margin-top:-0.2%;
+                            }
+                            @media only screen and  (max-width: 480px){// 445 
+                                min-width:100%;
+                                margin-top:-0.2%;
+                            }      
+                        }
+                    }
+                }
+            }
+        }
+        &#container16{
+            /* @include backgroundContainer($linkC16,$posC16,$sizeC16); */
+            #enfant1{
+                @include backgroundContainerDessinResp($widthC16Item1,$heightC16Item1,$linkC16Item1,$sizeC16Item1,$posC16Item1);  
+            }  
+            #enfant2{
+                @include backgroundContainerDessinResp($widthC16Item2,$heightC16Item2,$linkC16Item2,$sizeC16Item2,$posC16Item2);     
+            } 
+            #content{
+                width:100%;
+                #lien9{
+                    color:green;
+                }
+                #content-blank{
+                    #wpforms-form-118{
+                        width:100%;
+                        z-index:2;
+                        margin-top:8.5%;
+                        .wpforms-field-container{
+                            width:100%;
+                            text-align: center;
+                            @include display-flex(row,wrap,center,center); 
+                            #wpforms-118-field_0-container, #wpforms-118-field_1-container, #wpforms-118-field_3-container, #wpforms-118-field_4-container{
+                                padding-top:0.5%;
+                                padding-bottom:1%;
+                                width:25%;     
+                                @include display-flex(row,nowrap,center,center); 
+                                #wpforms-118-field_0, #wpforms-118-field_3 {
+                                    @include forms($linkNom,$posForm,$sizeForm);
+                                }
+                                #wpforms-118-field_1 {
+                                    @include forms($linkEmail,$posForm,$sizeForm);
+                                }
+                                #wpforms-118-field_4 {
+                                    @include forms($linkSujet,$posForm,$sizeForm);
+                                }  
+                                @media only screen and  (min-width : 481px) and (max-width: 1280px) {//1201 
+                                    width:50%;             
+                                }
+                                @media only screen and  (max-width: 550px){// 445 
+                                    width:100%;
+                                }   
+                            }  
+                            #wpforms-118-field_2-container{
+                                padding-top:0.5%;
+                                padding-bottom:1%;
+                                width:42.5%;    
+                                #wpforms-118-field_2{
+                                    @include backgroundContainer($linkC17Com,$posC17Com,$sizeC17Com);
+                                    padding:3.5% 3% 1% 10%;
+                                    margin-bottom:1%;
+                                    @include rounded(50px);
+                                    box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.75);
+                                    font-size:1.2em; 
+                                    height:250px;
+                                }
+                                @media only screen and  (min-width : 481px) and (max-width: 1280px) {//1201 
+                                    width:85%;             
+                                }
+                                @media only screen and  (max-width: 550px){// 445 
+                                    width:70%;
+                                }   
+                            }
+                        }
+                        .wpforms-submit-container{
+                            @include display-flex(row,nowrap,center,center); 
+                            #wpforms-submit-118{  
+                                @include forms($linkSubmit,$posForm,10%);
+                                width:25%;
+                                padding-top:1%;
+                                padding-bottom:1%;
+                                @media only screen and  (min-width : 481px) and (max-width: 1280px) {//1201 
+                                    width:50%;             
+                                }
+                                @media only screen and  (max-width: 550px){// 445 
+                                    width:75%;
+                                }   
+                            }                        
+                        }  
+                    }
+                }
+            }   
+        } 
+        &#container18{	
+            margin: 0px auto 20px auto;
+            z-index:2;
+            #enfants{
+                @include backgroundContainerDessinResp($widthC18Item1,$heightC18Item1,$linkC18Item1,$sizeC18Item1,$posC18Item1);  
+            } 
+            #enfants2{
+                @include backgroundContainerDessinResp($widthC18Item2,$heightC18Item2,$linkC18Item2,$sizeC18Item2,$posC18Item2);
+            }
+            #herbe{
+                @include backgroundContainerDessinResp($widthC18Item3,$heightC18Item3,$linkC18Item3,$sizeC18Item3,$posC18Item3);
+            }
+            iframe{
+                width:100%;
+                margin-top:-0.5%;
+                /* @media only screen and  (min-width : 1281px) and (max-width: 1540px) {
+                    height:500px;
+                 }
+                 @media only screen and  (min-width : 481px) and (max-width: 1280px) {
+                    height:350px;
+                 }
+                 @media only screen and  (max-width: 480px){
+                    height:200px;
+                 }   */   
+            }
+            #foot{
+                @include backgroundContainerDessinResp($widthC18Item4,$heightC18Item4,$linkC18Item4,$sizeC18Item4,$posC18Item4); 
+                @include display-flex(row,nowrap,center,center);
+                @media only screen and  (max-width: 480px){// 445 
+                    display:block;
+                 }    
+                #part1,#part2{
+                    h1{
+                        font-size:1.2em;
+                        padding-bottom:2%;
+                    }        
+                    width:26%;
+                    padding:0.8% 5% 0% 5%;
+                    margin-top:-12%;      
+                    p{
+                        padding:8px;
+                        line-height: 25px;
+                        text-align: justify;
+                    } 
+                    @media only screen and  (min-width : 1281px) and (max-width: 1540px) {//1201 
+                        
+                     }
+                     @media only screen and  (min-width : 481px) and (max-width: 1280px) {//1201 
+                         
+                     }
+                     @media only screen and  (max-width: 480px){// 445 
+                        width:80%;
+                        margin:1%;
+                        padding:0%;
+                     }          
+                }
+                #part1{
+                    @include backgroundContainer($linkFooter1,$posFooter1,$sizeFooter1);           
+                }
+                #part2{
+                    @include backgroundContainer($linkFooter2,$posFooter2,$sizeFooter2);      
+                }
+            } 
+        }
+    }
+    .containerDessin{
+        background-color:#3c9135;
+        width:100%;
+        padding-top: 28.4%;
+        &#container5, &#container7, &#container9, &#container11, &#container13, &#container15, &#container17{
+            @include display-flex(column,nowrap,normal,normal); 
+        }
+        &#container{
+            padding-top:50.8%;
+            /* @include display-flex(column,nowrap,normal,normal);  */
+            //Utilisé pour le menu responsive après clique sur le bouton menu
+        }
+        &#container3{
+            @include backgroundContainer($linkC3,$posC3,$sizeC3);    
+        }
+        &#container5{
+            @include backgroundContainer($linkC5,$posC5,$sizeC5);
+            #enfant{
+                @include backgroundContainerDessinResp($widthC5Item1,$heightC5Item1,$linkC5Item1,$sizeC5Item1,$posC5Item1);
+            }
+            #buisson{
+                @include backgroundContainerDessinResp($widthC5Item2,$heightC5Item2,$linkC5Item2,$sizeC5Item2,$posC5Item2);
+            }
+            #ecureil{
+                @include backgroundContainerDessinResp($widthC5Item3,$heightC5Item3,$linkC5Item3,$sizeC5Item3,$posC5Item3);
+            }
+        }
+        &#container7{
+            @include backgroundContainer($linkC7,$posC7,$sizeC7);   
+            #arbre2{
+                @include backgroundContainerDessinResp($widthC7Item1,$heightC7Item1,$linkC7Item1,$sizeC7Item1,$posC7Item1);
+            }
+        }
+        &#container9{
+            @include backgroundContainer($linkC9,$posC9,$sizeC9);
+            #enfant{
+                @include backgroundContainerDessinResp($widthC9Item1,$heightC9Item1,$linkC9Item1,$sizeC9Item1,$posC9Item1);
+            }
+        }
+        &#container11{
+            @include backgroundContainer($linkC11,$posC11,$sizeC11);
+            #ours{
+                @include backgroundContainerDessinResp($widthC11Item1,$heightC11Item1,$linkC11Item1,$sizeC11Item1,$posC11Item1);       
+            } 
+        }
+        &#container13{
+            @include backgroundContainer($linkC13,$posC13,$sizeC13);
+        }
+        &#container15{
+            @include backgroundContainer($linkC15,$posC15,$sizeC15);
+            #enfant{
+                @include backgroundContainerDessinResp($widthC15Item1,$heightC15Item1,$linkC15Item1,$sizeC15Item1,$posC15Item1);
+                z-index:3;
+                @media only screen and  (max-width: 481px){// 445 
+                    display:none;
+                }
+            } 
+        }
+        &#container17{
+            @include backgroundContainer($linkC17,$posC17,$sizeC17);  
+        }
+    }
+}

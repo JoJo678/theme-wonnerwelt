@@ -1,0 +1,84 @@
+/* Mixin pour gérer les angles arrondis*/
+@mixin rounded($radius){
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+    border: 0px;
+}
+
+/* Mixin avec un choix de couleur, hauteur et longueur au moment de l'include */
+@mixin block-color($color, $height, $width, $valuedefault: 50px){
+    background-color: $color;
+    height: $height;
+    width: $width;
+    margin-left: $valuedefault;
+}
+
+
+@mixin display-flex($direction, $wrap, $align, $justify){
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+
+    flex-direction: $direction;
+    -webkit-flex-direction: $direction;
+    -ms-flex-direction: $direction;
+
+    flex-wrap: $wrap; 
+    -webkit-flex-wrap: $wrap;
+    -ms-flex-wrap: $wrap;
+
+    align-items: $align;
+    -webkit-align-items: $align;
+    -ms-flex-align: $align;
+   
+    justify-content: $justify;    
+    -webkit-justify-content: $justify;
+    -ms-flex-pack: $justify;
+}
+
+
+/* Mixin test*/
+@mixin backgroundContainer($link,$pos,$size){
+    background-image: $link;
+    background-position:$pos;
+    background-repeat: no-repeat;
+    background-size:$size;
+}
+
+/* @mixin backgroundContainerDessin($width,$height,$link,$size,$pos){
+    z-index:2;
+    width: $width;
+    height: $height;
+    background-image: $link;
+    background-repeat: no-repeat;
+    background-size: $size;
+    position:absolute;
+    margin: $pos;
+   
+} */
+
+@mixin backgroundContainerDessinResp($width,$height,$link,$size,$pos){
+    z-index:2;
+    width: $width;
+    padding-top: $height;
+    background-image: $link;
+    background-size: $size;
+    background-repeat: no-repeat;
+    margin: $pos;
+}
+
+@mixin forms($linkF,$posF,$sizeF){
+    @include backgroundContainer($linkF,$posF,$sizeF);
+    max-width:70%;
+    text-align: center;
+    margin:1%;
+    padding-left:3.5%;
+    font-size:1.3em; 
+    @include rounded(50px);
+/* opacity: 0.5; */
+/*  -webkit-box-shadow: 2px 2px 22px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 22px 1px rgba(0,0,0,0.75); */
+    box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.75);
+}
+
